@@ -18,7 +18,6 @@
   <string name="history_item_delete_undo">Аднавіць</string>
   <string name="dialog_title_clear_history">Ачысьціць гісторыю прагляду</string>
   <string name="dialog_message_clear_history">Гэтае дзеяньне выдаліць усю гісторыю прагляду і зачыніць усе адкрытыя ўстаўкі. Вы ўпэўнены?</string>
-  <string name="nav_item_saved_pages">Захаваныя старонкі</string>
   <string name="share_via">Падзяліцца праз</string>
   <string name="menu_page_show_tabs">Паказаць укладкі</string>
   <string name="menu_page_other_languages">Зьмяніць мову</string>
@@ -59,7 +58,6 @@
   <string name="edit_section_captcha_hint">Паўтарыце словы зьверху</string>
   <string name="title_captcha">Увядзіце сымбалі з малюнку</string>
   <string name="edit_section_captcha_reload">Націсьніце малюнак для абнаўленьня</string>
-  <string name="edit_saved_page_refresh">Гэтая старонка можа быць састарэлай і павінна быць абнозленая для таго каб яе можна было рэдагаваць. Вы жадаеце абнавіць старонку?</string>
   <string name="nav_item_login">Увайсьці ў Вікіпэдыю</string>
   <string name="login_username_hint">Імя ўдзельніка</string>
   <string name="login_password_hint">Пароль</string>
@@ -214,6 +212,6 @@
   <string name="color_theme_select">Афармленьне</string>
   <string name="color_theme_light">Сьветлае</string>
   <string name="color_theme_dark">Цёмнае</string>
-  <string name="view_continue_reading_card_subtitle_today">Сёньня</string>
+  <string name="view_continue_reading_card_subtitle_today">сёньня</string>
   <string name="description_edit_save">Апублікаваць</string>
 </resources>

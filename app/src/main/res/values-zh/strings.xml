@@ -20,7 +20,6 @@
   <string name="dialog_message_clear_history">这将删除您所有的浏览历史，并关闭任何当前打开的标签。您确定要这样做么？</string>
   <string name="dialog_message_clear_history_yes">是</string>
   <string name="dialog_message_clear_history_no">否</string>
-  <string name="nav_item_saved_pages">已保存的页面</string>
   <string name="share_via">分享到…</string>
   <string name="search_redirect_from">重定向自%s</string>
   <string name="menu_page_show_tabs">显示标签页</string>
@@ -42,6 +41,9 @@
   <string name="nearby_osm_license">&amp;copy;&amp;nbsp;&lt;a href=\"https://www.openstreetmap.org/copyright/\"&gt;OpenStreetMap&lt;/a&gt;贡献者</string>
   <string name="last_updated_text">最后更新于%s</string>
   <string name="talk_page_link_text">讨论</string>
+  <string name="edit_history_link_text">编辑历史</string>
+  <string name="map_view_link_text">在地图上查看</string>
+  <string name="language_count_link_text">在%d种其他语言中可用</string>
   <string name="content_license_html">除非另有声明，内容采用&lt;a href=\"%1$s\"&gt;CC BY-SA 3.0&lt;/a&gt;许可协议发表。</string>
   <string name="edit_save_action_license_logged_in">一旦保存，即表示您认同&lt;a href=\"%1$s\"&gt;使用条款&lt;/a&gt;，并采用&lt;a href=\"%2$s\"&gt;CC BY-SA 3.0&lt;/a&gt;许可协议不可撤销地发表您的贡献。</string>
   <string name="edit_save_action_license_anon">一旦保存，即表示您认同&lt;a href=\"%1$s\"&gt;使用条款&lt;/a&gt;，并采用&lt;a href=\"%2$s/\"&gt;CC BY-SA 3.0&lt;/a&gt;许可协议不可撤销地发表您的贡献。编辑历史会显示您的设备的IP地址。如果您&lt;a href=\"https://#login\"&gt;登录&lt;/a&gt;后编辑，可以更好地保护您的隐私。</string>
@@ -69,9 +71,6 @@
   <string name="edit_section_captcha_hint">请输入验证码中的文字</string>
   <string name="title_captcha">输入验证码</string>
   <string name="edit_section_captcha_reload">点按验证码重新加载</string>
-  <string name="edit_saved_page_refresh">该保存的页面可能已经过时，必须刷新后才可以编辑。您要刷新该页面吗？</string>
-  <string name="edit_saved_page_refresh_yes">是</string>
-  <string name="edit_saved_page_refresh_no">否</string>
   <string name="nav_item_login">登录至维基百科</string>
   <string name="login_username_hint">用户名</string>
   <string name="login_password_hint">密码</string>
@@ -143,7 +142,9 @@
   <string name="about_description">关于维基百科应用</string>
   <string name="privacy_policy_description">隐私政策</string>
   <string name="terms_of_use_description">使用条款</string>
-  <string name="privacy_policy_url" fuzzy="true">https://m.wikimediafoundation.org/wiki/Special:MyLanguage/Privacy_Policy</string>
+  <string name="about_wikipedia_url">https://zh.m.wikipedia.org/wiki/Wikipedia:关于</string>
+  <string name="privacy_policy_url">https://m.wikimediafoundation.org/wiki/Special:MyLanguage/Privacy_policy</string>
+  <string name="offline_reading_and_data_url">https://www.mediawiki.org/wiki/Wikimedia_Apps/Android_FAQ/zh#离线阅读和数据</string>
   <string name="terms_of_use_url">https://m.wikimediafoundation.org/wiki/Terms_of_Use</string>
   <string name="cc_by_sa_3_url">https://creativecommons.org/licenses/by-sa/3.0/deed.zh</string>
   <string name="cc_0_url">https://creativecommons.org/publicdomain/zero/1.0/deed.zh</string>
@@ -172,6 +173,8 @@
   <string name="edit_summary_tag_other_hint">您改善该页面的其他方式</string>
   <string name="find_next">查找下一个</string>
   <string name="find_previous">查找上一个</string>
+  <string name="find_first_occurence">这是首次出现</string>
+  <string name="find_last_occurence">这是最后一次出现</string>
   <string name="abusefilter_title_warn">这可能是没有建设性的编辑。您确认要发布它么？</string>
   <string name="abusefilter_title_disallow">您不能发布该编辑。请返回更改。</string>
   <string name="abusefilter_text_warn">自动过滤器识别该编辑为没有潜在建设性的编辑。该编辑可能含有以下一种或多种问题：&lt;br /&gt;&lt;br /&gt;· 全文大写&lt;br /&gt;· 清空条目或有垃圾内容&lt;br /&gt;· 无关的外部链接或图像&lt;br /&gt;· 重复的文字</string>
@@ -200,6 +203,7 @@
   <string name="preference_title_show_images">显示图像</string>
   <string name="preference_summary_show_images">启用或停用页面中图像的加载功能。当您的网络连接过慢，或数据流量有限时，请不要选择该设置。</string>
   <string name="read_more_section">阅读更多</string>
+  <string name="about_article_section">关于此条目</string>
   <string name="menu_gallery_visit_page">前往文件页面</string>
   <string name="gallery_error_draw_failed">无法显示图像。</string>
   <string name="license_title">%s的许可协议</string>
@@ -258,11 +262,11 @@
   <string name="error_page_does_not_exist">该页面不存在</string>
   <string name="view_wiki_error_message_offline">无法连接至互联网</string>
   <string name="reference_title">参考文献%s</string>
-  <string name="preference_title_dim_dark_mode_images">在黑暗主题中将图片变暗</string>
-  <string name="preference_summary_dim_dark_mode_images">当使用黑暗主题时，减少图片的亮度</string>
   <string name="theme_chooser_dialog_image_dimming_switch_label">图片变暗（在黑暗主题中）</string>
   <string name="preference_title_prefer_offline_content">偏好离线内容</string>
   <string name="preference_summary_prefer_offline_content">通过加载可供离线使用的条目保存数据使用，而不总是加载条目最新版本</string>
+  <string name="preference_title_enable_offline_library">启用离线图书馆</string>
+  <string name="preference_summary_enable_offline_library">访问已下载到您设备的维基百科条目包（显示为.ZIM文件）以在您离线时阅读。&lt;a href=\"https://www.mediawiki.org/wiki/Wikimedia_Apps/Offline_support\"&gt;了解更多&lt;/a&gt;</string>
   <string name="crash_report_dialog_title">抱歉，应用程序上次发生了崩溃</string>
   <string name="crash_report_dialog_text">您是否希望发送崩溃报告至HockeyApp/第三方服务提供方，这样维基媒体可以浏览您的崩溃报告，并修复导致它的漏洞？</string>
   <string name="crash_report_dialog_dont_send_button">跳过</string>
@@ -280,7 +284,10 @@
   <string name="color_theme_select">主题</string>
   <string name="color_theme_light">日间</string>
   <string name="color_theme_dark">夜间</string>
-  <string name="preference_title_color_theme">黑暗主题</string>
+  <string name="color_theme_black">黑</string>
+  <string name="color_theme_test_title">示例文本</string>
+  <string name="color_theme_test_text">拖动滑块以更改阅读条目时的文本大小。要设置应用其他部分的文本大小，请更改您的系统文本大小。</string>
+  <string name="preference_title_app_theme">应用主题</string>
   <string name="preference_summary_color_theme">切换成应用的黑暗颜色主题</string>
   <string name="text_size_increase">调高文本大小</string>
   <string name="text_size_decrease">调低文本大小</string>
@@ -292,7 +299,6 @@
   <string name="reading_list_title_exists">阅读列表“%s”已存在。</string>
   <string name="reading_list_entry_empty">请输入标题。</string>
   <string name="reading_list_added_to_named">已添加至%s。</string>
-  <string name="reading_list_added_to_unnamed">已添加至阅读列表。</string>
   <string name="reading_list_already_exists">此条目已在列表中。</string>
   <string name="reading_list_added_view_button">查看列表</string>
   <string name="format_reading_list_statistical_summary_singular">1个条目，%1$.2f MB</string>
@@ -302,8 +308,10 @@
   <string name="reading_list_sort">排序</string>
   <string name="reading_list_sort_by_name">按名称排序</string>
   <string name="reading_list_sort_by_name_desc">按名称排序（反向）</string>
-  <string name="reading_list_sort_by_recent">按最近访问排序</string>
-  <string name="reading_list_sort_by_recent_desc">按最早访问排序</string>
+  <string name="reading_list_sort_by_recent">按添加日期排序（最近优先）</string>
+  <string name="reading_list_sort_by_recent_desc">按添加日期排序（最早优先）</string>
+  <string name="reading_list_sort_by_created">按创建日期排序（最近优先）</string>
+  <string name="reading_list_sort_by_created_desc">按创建日期排序（最早优先）</string>
   <string name="reading_list_menu_delete">删除列表</string>
   <string name="reading_list_menu_rename">重命名</string>
   <string name="reading_list_menu_edit_description">编辑描述</string>
@@ -319,9 +327,9 @@
   <string name="reading_list_items_deleted">%d个条目已从列表中移除</string>
   <string name="reading_list_item_delete_undo">撤销</string>
   <string name="reading_list_deleted">%s已删除</string>
-  <string name="reading_lists_empty">目前尚无阅读列表</string>
-  <string name="reading_lists_empty_message">保存条目至阅读列表，这样即便您日后离线了，您也可以阅读这些条目。</string>
-  <string name="reading_lists_onboarding_intro">从您希望稍后阅读的条目创建阅读列表，即便当您离线时！</string>
+  <string name="saved_list_empty_title">目前尚无保存的页面</string>
+  <string name="reading_lists_empty_message">添加条目到列表中以便日后阅读，即便当您离线时。</string>
+  <string name="reading_lists_onboarding_intro">添加条目到列表中以便日后阅读，即便当您离线时！</string>
   <string name="reading_lists_onboarding_for_example">例如</string>
   <string name="reading_lists_onboarding_example1">要访问的地点</string>
   <string name="reading_lists_onboarding_example2">喜爱的动物</string>
@@ -337,18 +345,22 @@
   <string name="reading_list_confirm_remove_article_from_offline">从离线内容中移除</string>
   <string name="reading_list_confirm_remove_article_from_offline_title">出现在多个列表中的条目</string>
   <string name="reading_list_confirm_remove_article_from_offline_message">%s将不再用于所有阅读列表中的离线内容：</string>
-  <string name="reading_list_sync_reminder_title">阅读列表同步已关闭</string>
-  <string name="reading_list_sync_reminder_text">如果您在应用设置中允许同步的话，您的阅读列表就可以同步到您的维基百科账户。</string>
-  <string name="reading_list_sync_reminder_action">打开</string>
   <string name="reading_list_login_reminder_title">同步阅读列表</string>
-  <string name="reading_list_login_reminder_text">您的阅读列表现已保存到您的维基百科账户。只要登录您的账户，您的阅读列表就会自动同步。</string>
   <string name="reading_lists_confirm_remote_delete">这将从外部存储中删除任何之前同步的阅读列表。继续么？</string>
   <string name="reading_lists_confirm_remote_delete_yes">是</string>
   <string name="reading_lists_confirm_remote_delete_no">否</string>
   <string name="reading_list_article_save_in_progress">条目已开始下载，并将在完成时离线可用。</string>
   <string name="reading_list_already_contains_selection">选择的列表已包含所有选择的页面。</string>
-  <string name="reading_list_added_articles_list_untitled">已添加%d个条目至阅读列表。</string>
   <string name="reading_list_added_articles_list_titled">已添加%1$d个条目至%2$s</string>
+  <string name="reading_list_delete_confirm">您确定要删除%s么？</string>
+  <string name="default_reading_list_name">已保存</string>
+  <string name="default_reading_list_description">用于您的已保存条目的默认列表</string>
+  <string name="no_user_lists_title">组织条目至列表中</string>
+  <string name="no_user_lists_msg">创建想前往旅行的地点、感兴趣的话题及更多事物的列表</string>
+  <string name="reading_list_saved_list_rename">%1$s（用户创建）</string>
+  <string name="split_reading_list_message">每个阅读列表限制1000个条目。超过此限制的现有列表需要拆分为多个列表。</string>
+  <string name="reading_list_article_limit_message">不能添加到此列表。您已达到用于“%s”的每个列表1000个条目的限制。</string>
+  <string name="reading_lists_limit_message">不能创建作者列表。您已达到每个账户100个阅读列表的限制。</string>
   <plurals name="reading_list_article_offline_message">
     <item quantity="one">该条目现在可以离线使用。</item>
     <item quantity="other">这些条目现在可以离线使用。</item>
@@ -365,12 +377,22 @@
   <string name="notification_reverted">您对条目&lt;strong&gt;%2$s&lt;/strong&gt;的编辑被&lt;em&gt;%1$s&lt;/em&gt;回退。</string>
   <string name="notification_thanks_title">您已被感谢！</string>
   <string name="notification_thanks">&lt;em&gt;%1$s&lt;/em&gt;感谢了您对页面&lt;strong&gt;%2$s&lt;/strong&gt;的编辑</string>
+  <string name="notification_channel_name">同步</string>
+  <string name="notification_channel_description">下载过程</string>
+  <string name="notification_syncing_title">正在下载%1$d个条目…</string>
+  <string name="notification_syncing_description">剩余%1$d个条目</string>
+  <string name="notification_syncing_pause_button">暂停</string>
+  <string name="notification_syncing_resume_button">恢复</string>
+  <string name="notification_syncing_cancel_button">取消</string>
   <string name="view_continue_reading_card_title">继续阅读</string>
   <string name="view_because_you_read_card_title">因为您阅读</string>
   <string name="view_random_card_title">随机产生条目器</string>
-  <string name="view_random_card_subtitle">阅读来自维基百科的随机条目</string>
+  <string name="view_random_card_subtitle">轻划浏览以阅读来自维基百科的随机条目。</string>
+  <string name="view_random_card_action">掷骰子</string>
+  <string name="view_next_random_article">加载另一个随机条目</string>
   <string name="view_main_page_card_title">维基百科今日</string>
   <string name="view_main_page_card_subtitle">%s首页</string>
+  <string name="view_main_page_card_action">查看主页</string>
   <string name="view_featured_image_card_title">每日图片</string>
   <string name="view_featured_image_card_download">下载</string>
   <string name="menu_feed_card_dismiss">隐藏此卡片</string>
@@ -378,7 +400,6 @@
   <string name="menu_feed_overflow_label">更多选项</string>
   <string name="feed_featured_image_share_subject">来自维基共享资源的特色图片</string>
   <string name="feed">探索</string>
-  <string name="view_card_footer_button">查看更多</string>
   <string name="most_read_list_card_title">趋势</string>
   <string name="view_static_card_icon_content_description">卡片图标</string>
   <string name="view_card_news_title">新闻动态</string>
@@ -387,11 +408,27 @@
     <item quantity="other">%d天前</item>
   </plurals>
   <string name="view_continue_reading_card_subtitle_today">今天</string>
+  <string name="view_continue_reading_card_subtitle_read_date">阅读%s</string>
   <string name="view_announcement_card_negative_action">不用了，谢谢</string>
   <string name="view_offline_card_text">内容不能在离线时加载。</string>
   <string name="view_featured_article_card_title">典范条目</string>
   <string name="view_featured_article_footer_save_button_label">保存</string>
   <string name="view_featured_article_footer_saved_button_label">已保存</string>
+  <string name="feed_configure_activity_title">自定义订阅源</string>
+  <string name="feed_configure_menu_reset">恢复默认视图</string>
+  <string name="feed_configure_menu_select_all">全选</string>
+  <string name="feed_configure_menu_deselect_all">取消全选</string>
+  <string name="feed_item_type_news">有关当前活动的条目</string>
+  <string name="feed_item_type_on_this_day">这一天历史上的活动</string>
+  <string name="feed_item_type_continue_reading">阅读您的标签中一个开启条目的快速返回链接</string>
+  <string name="feed_item_type_because_you_read">基于您的历史中最近阅读条目的建议</string>
+  <string name="feed_item_type_featured_article">维基百科上的每日典范条目</string>
+  <string name="feed_item_type_trending">每日最多访问的条目</string>
+  <string name="feed_item_type_featured_image">来自维基共享资源的每日特色图片</string>
+  <string name="feed_item_type_main_page">包含每日特色内容的维基百科首页</string>
+  <string name="feed_item_type_randomizer">生成随机条目以阅读</string>
+  <string name="feed_configure_onboarding_action">自定义</string>
+  <string name="feed_configure_onboarding_text">&lt;strong&gt;自定义您的浏览订阅源&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;您现在可以选择在您的订阅源上显示什么，并可以排序您感兴趣的内容类型。</string>
   <string name="description_edit_text_hint">标题描述</string>
   <string name="description_edit_save">发布</string>
   <string name="description_edit_add_description">添加标题描述</string>
@@ -434,23 +471,24 @@
   <string name="offline_compilation_download_device_offline">没有网络连接。请确保您已重新在线，然后重试。</string>
   <string name="offline_read_permission_rationale">需要访问您设备存储的权限才能离线浏览。</string>
   <string name="offline_read_permission_error">未授予读取来自设备存储内容的权限。</string>
-  <string name="offline_card_text">您正在浏览您的离线图书馆中的维基百科离线版本。</string>
+  <string name="offline_card_sideloading_text">您正在从您的离线图书馆中的条目包离线浏览维基百科。</string>
   <string name="offline_my_compilations">管理我的离线图书馆</string>
   <string name="offline_compilations_title">离线图书馆</string>
   <string name="offline_compilations_search_by_name">按名称搜索条目包</string>
-  <string name="offline_compilations_found_count">在我的图书馆中（%d）</string>
+  <string name="offline_compilations_found_count">在我的离线图书馆中（%d）</string>
   <string name="offline_compilations_add">添加至我的离线图书馆</string>
   <string name="remote_compilations_title">离线图书馆</string>
   <string name="remote_compilations_description">通过离线图书馆，您现在可以打包下载条目，以在您没有可用的互联网连接时阅读。</string>
-  <string name="offline_compilation_detail_date_size">%1$s • %2$.2f GB</string>
-  <string name="offline_compilation_detail_button_download">下载 • %.2f GB</string>
+  <string name="offline_compilation_detail_date_size_v2">%1$s • %2$s</string>
+  <string name="size_gb">%.2f GB</string>
+  <string name="size_mb">%.2f MB</string>
+  <string name="offline_compilation_detail_button_download_v2">下载 • %s</string>
   <string name="offline_compilation_detail_button_remove">移除</string>
   <string name="remote_compilation_download">下载</string>
-  <string name="storage_size">%.2f GB</string>
-  <string name="storage_size_free">%.2f GB免费</string>
+  <string name="storage_size_free_v2">%s空闲</string>
   <string name="storage_used_by_compilations">用于离线图书馆</string>
   <string name="storage_other_apps">其他应用</string>
-  <string name="offline_compilation_download_progress_text">%1$.2f GB / %2$.2f GB</string>
+  <string name="offline_compilation_download_progress_text_v2">%1$s / %2$s</string>
   <plurals name="offline_compilation_download_time_remaining">
     <item quantity="one">还剩1分钟</item>
     <item quantity="other">还剩%d分钟</item>
@@ -464,11 +502,11 @@
   <string name="compilation_remove_confirm">您要从您的离线图书馆中移除该条目么？</string>
   <string name="offline_library_title">离线图书馆</string>
   <string name="offline_library_empty_title">您的离线图书馆没有任何东西</string>
-  <string name="offline_library_empty_description">现在可以选择下载一些维基百科条目，以便日后免流量访问。</string>
+  <string name="offline_library_empty_description_sideload">您的离线图书馆中的“条目包”是预打包的条目集合，以便在您的设备上存储，这样您可以在离线时继续阅读。&lt;br /&gt;&lt;a href=\"https://www.mediawiki.org/wiki/Wikimedia_Apps/Offline_support\"&gt;了解更多&lt;/a&gt;</string>
+  <string name="offline_library_packs_hint">您的图书馆中的条目包会在您离线时提供阅读。&lt;a href=\"https://www.mediawiki.org/wiki/Wikimedia_Apps/Offline_support\"&gt;了解更多&lt;/a&gt;</string>
+  <string name="offline_library_data_usage_hint">想要在数据使用时保存？在设置中选择“首选离线内容”以首先显示可用离线条目，即便您已连接到网络。&lt;a href=\"#settings\"&gt;前往设置&lt;/a&gt;</string>
   <string name="offline_library_empty_search">搜索离线图书馆</string>
   <string name="offline_library_search_results_state">搜索您的离线图书馆的结果</string>
-  <string name="offline_library_onboarding_action">了解更多</string>
-  <string name="offline_library_onboarding_text">介绍离线图书馆——现在下载条目包以供日后离线阅读。</string>
   <string name="offline_library_onboarding_button_done">完成</string>
   <string name="offline_library_onboarding_build_library_title">打造您的离线图书馆</string>
   <string name="offline_library_onboarding_build_library_subtitle">现在下载维基百科条目包，以便日后免流量访问。</string>
@@ -476,20 +514,35 @@
   <string name="offline_library_onboarding_uninterrupted_reading_subtitle">当您没有互联网访问时，保持阅读并在您的离线图书馆中搜索条目。</string>
   <string name="offline_library_onboarding_store_knowledge_title">存储更多知识</string>
   <string name="offline_library_onboarding_store_knowledge_subtitle">在您的设备能够处理的情况下，尽可能多的下载维基百科。离线图书馆也可以访问外部存储上的条目包。</string>
+  <string name="offline_library_main_page_hint_html">此首页提供这个条目包的内容概览。&lt;br /&gt;&lt;br /&gt;当您离线时，您也可以在您的离线图书馆通过搜索可用条目，探索任意条目包的内容。</string>
   <string name="onboarding_skip">跳过</string>
   <string name="onboarding_continue">继续</string>
   <string name="onboarding_get_started">入门</string>
+  <string name="onboarding_welcome_title">自由的百科全书</string>
+  <string name="onboarding_welcome_text">维基百科由志愿者合作撰写，并包含将近300种不同语言的超过4000万个条目。&lt;a href=\"#about\"&gt;了解更多&lt;/a&gt;</string>
   <string name="onboarding_explore_title">浏览的新方式</string>
-  <string name="onboarding_explore_text">在浏览订阅上发现特色条目、热门话题和阅读建议。</string>
-  <string name="onboarding_reading_list_sync_title">通过同步阅读列表</string>
-  <string name="onboarding_reading_list_sync_text">创建包含您希望日后阅读条目的阅读列表，这样即便您离线也可阅读。&lt;a href=\"#login\"&gt;登录或创建&lt;/a&gt;您的维基百科账户来保持您的阅读列表备份。</string>
+  <string name="onboarding_explore_text">通过不断更新的探索订阅源扑进维基百科的怀抱。&lt;br/&gt;&lt;b&gt;自定义&lt;/b&gt;您感兴趣内容的订阅源——无论是了解有关&lt;b&gt;历史上的今天&lt;/b&gt;，还是&lt;b&gt;随机&lt;/b&gt;掷骰子。</string>
+  <string name="onboarding_save_to_reading_lists_title">保存至阅读列表</string>
+  <string name="onboarding_save_to_reading_lists_text">从您希望稍后阅读的条目创建阅读列表，即便当您离线时。</string>
   <string name="onboarding_analytics_title">发送匿名数据</string>
-  <string name="onboarding_analytics_text">通过让我们知道您如何使用它，帮助应用做得更好。数据收集是匿名的。&lt;a href=\"#privacy\"&gt;了解更多&lt;/a&gt;</string>
+  <string name="onboarding_analytics_offline_text">通过让我们知道您如何使用它，帮助应用做得更好。数据收集是匿名的。&lt;a href=\"#privacy\"&gt;了解更多&lt;/a&gt;</string>
   <string name="onboarding_analytics_switch_title">发送使用数据</string>
   <string name="onboarding_create_account_sync">同步您的阅读列表</string>
   <string name="onboarding_create_account_contributions">保持追踪您的贡献</string>
   <string name="onboarding_create_account_preferences">保存您的参数设置</string>
+  <string name="onboarding_got_it">明白了</string>
   <string name="app_shortcuts_random">随机</string>
   <string name="app_shortcuts_continue_reading">继续阅读</string>
   <string name="app_shortcuts_search">搜索</string>
+  <string name="more_trending_text">更多类似条目</string>
+  <string name="top_on_this_day">%1$s上的趋势</string>
+  <string name="on_this_day_card_title">历史上的今天</string>
+  <string name="more_events_text">这一天的更多事情</string>
+  <string name="events_count_text">%2$s~%3$d年间的%1$s次事件</string>
+  <string name="this_year">今年</string>
+  <string name="back_to_top">返回顶部</string>
+  <plurals name="diff_years">
+    <item quantity="one">去年</item>
+    <item quantity="other">%d年前</item>
+  </plurals>
 </resources>

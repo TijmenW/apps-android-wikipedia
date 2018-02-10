@@ -12,7 +12,6 @@
   <string name="menu_clear_all_history">گئچمیشی سیل</string>
   <string name="dialog_title_clear_history">آختاریش گئچمیشینی سیل</string>
   <string name="dialog_message_clear_history">بۇ براوزرینیزین گئچمیشینی سیلیب، بۆتون آچیق تبلری باغلایاجاق. آرخایین‌می‌سینیز؟</string>
-  <string name="nav_item_saved_pages">ذخیره اوْلونموش صفحه‌لر</string>
   <string name="share_via">بۇنونلا پایلاش...</string>
   <string name="search_redirect_from">%s -دن يوْل‌لاندیریلمیش</string>
   <string name="menu_page_show_tabs">تبلری گؤستر</string>
@@ -144,10 +143,12 @@
   <string name="reading_list_added_view_button">لیسته باخ</string>
   <string name="reading_list_sort_by_name">آدینا گؤره دۆزولموش</string>
   <string name="reading_list_sort_by_name_desc">آدینا گؤره دۆزولموش (ترس)</string>
-  <string name="reading_list_sort_by_recent">ان سوْنونا گؤره دۆزولموش</string>
-  <string name="reading_list_sort_by_recent_desc">ان سوْنونا گؤره دۆزولموش (ترس)</string>
+  <string name="reading_list_sort_by_recent" fuzzy="true">ان سوْنونا گؤره دۆزولموش</string>
+  <string name="reading_list_sort_by_recent_desc" fuzzy="true">ان سوْنونا گؤره دۆزولموش (ترس)</string>
   <string name="reading_lists_onboarding_for_example">میثال اۆچون</string>
   <string name="reading_lists_onboarding_example3" fuzzy="true">فضا!</string>
   <string name="reading_lists_onboarding_got_it">آنلادیم</string>
   <string name="user_option_sync_label">ترجیحلر</string>
+  <string name="view_featured_article_card_title">سئچیلمیش مقاله</string>
+  <string name="view_featured_article_footer_save_button_label">ذخیره ائت</string>
 </resources>

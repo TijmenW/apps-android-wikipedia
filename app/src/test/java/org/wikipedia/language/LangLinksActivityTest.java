@@ -1,20 +1,18 @@
 package org.wikipedia.language;
 
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.robolectric.RobolectricTestRunner;
 import org.wikipedia.dataclient.WikiSite;
 import org.wikipedia.page.PageTitle;
-import org.wikipedia.test.TestRunner;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
-@RunWith(TestRunner.class)
+@RunWith(RobolectricTestRunner.class)
 public class LangLinksActivityTest{
 
     @Test public void testAddChineseEntriesForTraditionalChinese() throws Throwable {
@@ -23,7 +21,7 @@ public class LangLinksActivityTest{
         List<PageTitle> list = getBaseLanguageEntries();
 
 
-        LangLinksActivity.addChineseEntriesIfNeeded(title.getWikiSite().languageCode(), title.getText(), list);
+        LangLinksActivity.addChineseEntriesIfNeeded(title, list);
         assertThat(list, is(getExpectedZhHantResults()));
     }
 
@@ -32,17 +30,16 @@ public class LangLinksActivityTest{
         PageTitle title = new PageTitle(null, "洋基体育场 (1923年)", WikiSite.forLanguageCode("zh-hans"));
         List<PageTitle> list = getBaseLanguageEntries();
 
-        LangLinksActivity.addChineseEntriesIfNeeded(title.getWikiSite().languageCode(), title.getText(), list);
+        LangLinksActivity.addChineseEntriesIfNeeded(title, list);
         assertThat(list, is(getExpectedZhHansResults()));
     }
 
     @Test public void testSkipAddChineseEntries() throws Throwable {
 
         PageTitle title = new PageTitle(null, "Yankee Stadium (1923)", WikiSite.forLanguageCode("da"));
-        String languageResultTitle = "Yankee Stadium (1923)";
         List<PageTitle> list = getBaseLanguageEntriesWithZhVariants();
 
-        LangLinksActivity.addChineseEntriesIfNeeded(title.getWikiSite().languageCode(), languageResultTitle, list);
+        LangLinksActivity.addChineseEntriesIfNeeded(title, list);
         assertThat(list, is(getExpectedGeneralResults()));
     }
 

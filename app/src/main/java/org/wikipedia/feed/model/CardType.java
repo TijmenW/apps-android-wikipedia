@@ -101,6 +101,16 @@ public enum CardType implements EnumCode {
             return new OnThisDayCardView(ctx);
         }
     },
+    ONBOARDING_CUSTOMIZE_FEED(19) {
+        @NonNull @Override public FeedCardView<?> newView(@NonNull Context ctx) {
+            return new AnnouncementCardView(ctx);
+        }
+    },
+    ONBOARDING_READING_LIST_SYNC(20) {
+        @NonNull @Override public FeedCardView<?> newView(@NonNull Context ctx) {
+            return new AnnouncementCardView(ctx);
+        }
+    },
     OFFLINE(98) {
         @NonNull @Override public FeedCardView<?> newView(@NonNull Context ctx) {
             return new OfflineCardView(ctx);

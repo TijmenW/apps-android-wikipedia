@@ -20,7 +20,6 @@
   <string name="dialog_message_clear_history">Isto apagará todo o seu histórico de navegação e fechará todas as guias abertas. Tem certeza?</string>
   <string name="dialog_message_clear_history_yes">Sim</string>
   <string name="dialog_message_clear_history_no">Não</string>
-  <string name="nav_item_saved_pages">Páginas salvas</string>
   <string name="share_via">Compartilhar via</string>
   <string name="search_redirect_from">Redirecionado de %s</string>
   <string name="menu_page_show_tabs">Mostrar guias</string>
@@ -42,6 +41,9 @@
   <string name="nearby_osm_license">&amp;copy; &amp;nbsp;&lt;a href=\"https://www.openstreetmap.org/copyright/\"&gt;OpenStreetMap&lt;/a&gt; contribuintes</string>
   <string name="last_updated_text">Última atualização: %s</string>
   <string name="talk_page_link_text">Discussão</string>
+  <string name="edit_history_link_text">Histórico de edições</string>
+  <string name="map_view_link_text">Ver no mapa</string>
+  <string name="language_count_link_text">Disponível em %d outros idiomas</string>
   <string name="content_license_html">O conteúdo está disponível sob &lt;a href=\"%1$s\"&gt;CC BY-SA 3.0&lt;/a&gt; a menos que seja indicado em contrário</string>
   <string name="edit_save_action_license_logged_in">Ao salvar, você estará concordando com os &lt;a href=\"%1$s\"&gt;Termos de Uso&lt;/a&gt; e em publicar irrevogavelmente a sua contribuição sob a licença &lt;a href=\"%2$s\"&gt;CC-BY-SA 3.0&lt;/a&gt;.</string>
   <string name="edit_save_action_license_anon">Ao salvar, você estará concordando com os &lt;a href=\"%1$s\"&gt;Termos de Uso&lt;/a&gt; e em publicar irrevogavelmente a sua contribuição sob a licença &lt;a href=\"%2$s\"&gt;CC BY-SA 3.0&lt;/a&gt;. Edições serão atribuídas ao endereço IP do seu dispositivo. Se &lt;a href=\"https://#login\"&gt;iniciar sessão&lt;/a&gt;, você terá mais privacidade.</string>
@@ -69,9 +71,6 @@
   <string name="edit_section_captcha_hint">Repita as palavras de cima</string>
   <string name="title_captcha">Digite o CAPTCHA</string>
   <string name="edit_section_captcha_reload">Toque no CAPTCHA para atualizar</string>
-  <string name="edit_saved_page_refresh">Esta página salva pode estar desatualizada, e deve ser atualizada para ativar a sua edição. Gostaria de atualizar a página?</string>
-  <string name="edit_saved_page_refresh_yes">Sim</string>
-  <string name="edit_saved_page_refresh_no">Não</string>
   <string name="nav_item_login">Entrar na Wikipédia</string>
   <string name="login_username_hint">Nome de usuário</string>
   <string name="login_password_hint">Senha</string>
@@ -143,7 +142,9 @@
   <string name="about_description">Sobre o aplicativo da Wikipédia</string>
   <string name="privacy_policy_description">Política de privacidade</string>
   <string name="terms_of_use_description">Termos de uso</string>
+  <string name="about_wikipedia_url">https://pt.m.wikipedia.org/wiki/Wikipédia:Sobre_a_Wikipédia</string>
   <string name="privacy_policy_url" fuzzy="true">https://wikimediafoundation.org/wiki/Privacy_Policy</string>
+  <string name="offline_reading_and_data_url">https://www.mediawiki.org/wiki/Wikimedia_Apps/Android_FAQ#Offline_reading_and_data</string>
   <string name="terms_of_use_url">https://wikimediafoundation.org/wiki/Termos_de_Uso</string>
   <string name="cc_by_sa_3_url">https://creativecommons.org/licenses/by-sa/3.0/deed.pt</string>
   <string name="cc_0_url">https://creativecommons.org/publicdomain/zero/1.0/deed.pt</string>
@@ -172,6 +173,8 @@
   <string name="edit_summary_tag_other_hint">Outras maneiras de como você melhorou a página</string>
   <string name="find_next">Encontrar próxima</string>
   <string name="find_previous">Encontrar anterior</string>
+  <string name="find_first_occurence">Esta é a primeira ocorrência</string>
+  <string name="find_last_occurence">Esta é a última ocorrência</string>
   <string name="abusefilter_title_warn">Isso pode ser uma edição não construtiva. Tem certeza de que deseja publicá-la?</string>
   <string name="abusefilter_title_disallow">Não pode publicar esta edição. Por favor, volte atrás e altere-a.</string>
   <string name="abusefilter_text_warn">Um filtro automático identificou que esta edição contém possíveis erros. Ela pode conter uma ou mais das seguintes características:&lt;br /&gt;&lt;br /&gt;· Uso excessivo de letras maiúsculas;&lt;br/&gt;· Entradas em branco ou com spam;&lt;br/&gt;· Imagens ou ligações externas irrelevantes; e&lt;br/&gt;· Repetição de caracteres.</string>
@@ -200,6 +203,7 @@
   <string name="preference_title_show_images">Mostrar imagens</string>
   <string name="preference_summary_show_images">Habilita ou desabilita o carregamento de imagens em páginas. Desmarque esta opção caso sua conexão à Internet for lenta ou caso seu plano de dados for limitado.</string>
   <string name="read_more_section">Ler mais</string>
+  <string name="about_article_section">Sobre este artigo</string>
   <string name="menu_gallery_visit_page">Ir para a página do arquivo</string>
   <string name="gallery_error_draw_failed">Não foi possível desenhar a imagem.</string>
   <string name="license_title">Licença para %s</string>
@@ -258,11 +262,11 @@
   <string name="error_page_does_not_exist">Esta página não existe</string>
   <string name="view_wiki_error_message_offline">Não foi possível conectar-se à Internet</string>
   <string name="reference_title">Referência %s</string>
-  <string name="preference_title_dim_dark_mode_images">Imagens dim no tema escuro</string>
-  <string name="preference_summary_dim_dark_mode_images">Reduza o brilho das imagens ao usar o tema escuro</string>
   <string name="theme_chooser_dialog_image_dimming_switch_label">Escurecimento da imagem (no tema escuro)</string>
   <string name="preference_title_prefer_offline_content">Prefira o conteúdo off-line</string>
   <string name="preference_summary_prefer_offline_content">Salve o uso de dados carregando artigos que estão disponíveis offline em vez de carregar sempre a versão mais recente de um artigo</string>
+  <string name="preference_title_enable_offline_library">Ativar biblioteca off-line</string>
+  <string name="preference_summary_enable_offline_library">Acesse os pacotes de artigos da Wikipédia (mostrado como .ZIM files) que foram baixados para o seu dispositivo para ler quando você está desconectado. &lt;a href=\"https://www.mediawiki.org/wiki/Wikimedia_Apps/Offline_support\"&gt;Descubra mais&lt;/a&gt;</string>
   <string name="crash_report_dialog_title">Desculpe, o aplicativo encerrou inesperadamente da última vez</string>
   <string name="crash_report_dialog_text">Gostaria de enviar um relatório de falha ao HockeyApp / um provedor de serviço de terceiros para que a Wikimedia possa analisar a falha e corrigi-la?</string>
   <string name="crash_report_dialog_dont_send_button">Pular</string>
@@ -280,7 +284,10 @@
   <string name="color_theme_select">Tema</string>
   <string name="color_theme_light">Claro</string>
   <string name="color_theme_dark">Escuro</string>
-  <string name="preference_title_color_theme">Tema escuro</string>
+  <string name="color_theme_black">Preto</string>
+  <string name="color_theme_test_title">Texto de amostra</string>
+  <string name="color_theme_test_text">Arraste a barra deslizante para alterar o tamanho do texto que é usado para ler artigos. Para definir o tamanho do texto na restante aplicação, altere o tamanho de texto do sistema.</string>
+  <string name="preference_title_app_theme">Tema do aplicativo</string>
   <string name="preference_summary_color_theme">Mude para usar o tema da cor escura do aplicativo</string>
   <string name="text_size_increase">Aumentar o tamanho do texto</string>
   <string name="text_size_decrease">Diminuir o tamanho do texto</string>
@@ -292,7 +299,6 @@
   <string name="reading_list_title_exists">A lista de leitura \"%s\" já existe.</string>
   <string name="reading_list_entry_empty">Introduza um título, por favor.</string>
   <string name="reading_list_added_to_named">Adicionado para %s.</string>
-  <string name="reading_list_added_to_unnamed">Adicionado à lista de leitura.</string>
   <string name="reading_list_already_exists">Este artigo já está nessa lista.</string>
   <string name="reading_list_added_view_button">Ver lista</string>
   <string name="format_reading_list_statistical_summary_singular">1 artigo, %1$.2f MB</string>
@@ -302,8 +308,10 @@
   <string name="reading_list_sort">Ordenar</string>
   <string name="reading_list_sort_by_name">Ordenar por nome</string>
   <string name="reading_list_sort_by_name_desc">Ordenar por nome (inverter)</string>
-  <string name="reading_list_sort_by_recent">Classificar por mais recente</string>
-  <string name="reading_list_sort_by_recent_desc">Ordenar pelo menos recente</string>
+  <string name="reading_list_sort_by_recent">Classificar por data adicionada (mais nova)</string>
+  <string name="reading_list_sort_by_recent_desc">Classificar por data adicionada (mais antiga)</string>
+  <string name="reading_list_sort_by_created">Ordenar por data criada (mais nova)</string>
+  <string name="reading_list_sort_by_created_desc">Ordenar por data criada (a mais antiga)</string>
   <string name="reading_list_menu_delete">Excluir lista</string>
   <string name="reading_list_menu_rename">Renomear</string>
   <string name="reading_list_menu_edit_description">Editar descrição</string>
@@ -319,9 +327,9 @@
   <string name="reading_list_items_deleted">%d artigos removidos da lista</string>
   <string name="reading_list_item_delete_undo">Desfazer</string>
   <string name="reading_list_deleted">%s apagado</string>
-  <string name="reading_lists_empty">Nenhuma lista de leitura ainda</string>
-  <string name="reading_lists_empty_message">Salve os artigos nas listas de leitura para que você possa visualizá-los mais tarde, mesmo quando estiver offline.</string>
-  <string name="reading_lists_onboarding_intro">Crie listas de leitura de artigos que deseja ler mais tarde, mesmo quando você estiver offline!</string>
+  <string name="saved_list_empty_title">Nenhuma lista de leitura ainda</string>
+  <string name="reading_lists_empty_message">Adicione itens à lista para ler, mesmo quando você está desconectado.</string>
+  <string name="reading_lists_onboarding_intro">Adicione artigos a uma lista para ler mais tarde, mesmo quando você está desconectado!</string>
   <string name="reading_lists_onboarding_for_example">Por exemplo</string>
   <string name="reading_lists_onboarding_example1">Lugares para visitar</string>
   <string name="reading_lists_onboarding_example2">Animais favoritos</string>
@@ -337,18 +345,22 @@
   <string name="reading_list_confirm_remove_article_from_offline">Remover do modo offline</string>
   <string name="reading_list_confirm_remove_article_from_offline_title">O artigo aparece em várias listas</string>
   <string name="reading_list_confirm_remove_article_from_offline_message">%s não estará mais disponível off-line para todas as listas de leitura:</string>
-  <string name="reading_list_sync_reminder_title">A sincronização da lista de leitura está desativada</string>
-  <string name="reading_list_sync_reminder_text">Suas listas de leitura podem ser sincronizadas com a sua conta Wikipedia se você permitir a sincronização nas configurações do aplicativo.</string>
-  <string name="reading_list_sync_reminder_action">Ativar</string>
   <string name="reading_list_login_reminder_title">Sincronizar listas de leitura</string>
-  <string name="reading_list_login_reminder_text">Suas listas de leitura podem agora ser salvas na sua conta Wikipedia. Basta acessar sua conta e suas listas de leitura serão sincronizadas automaticamente.</string>
   <string name="reading_lists_confirm_remote_delete">Isso eliminará todas as listas de leitura previamente sincronizadas do armazenamento remoto. Prosseguir?</string>
   <string name="reading_lists_confirm_remote_delete_yes">Sim</string>
   <string name="reading_lists_confirm_remote_delete_no">Não</string>
   <string name="reading_list_article_save_in_progress">O artigo está sendo baixado, e estará disponível offline quando completo.</string>
   <string name="reading_list_already_contains_selection">A lista escolhida já contém todas as páginas selecionadas.</string>
-  <string name="reading_list_added_articles_list_untitled">Adicionado %d artigos para a lista de leitura.</string>
   <string name="reading_list_added_articles_list_titled">Adicionado %1$d artigos para %2$s</string>
+  <string name="reading_list_delete_confirm">Tem a certeza de que pretende eliminar %s?</string>
+  <string name="default_reading_list_name">Salvo</string>
+  <string name="default_reading_list_description">Lista padrão para seus artigos salvos</string>
+  <string name="no_user_lists_title">Organize artigos em listas</string>
+  <string name="no_user_lists_msg">Criar listas de locais para viajar, tópicos favoritos, e muito mais</string>
+  <string name="reading_list_saved_list_rename">%1$s (criada pelo usuário)</string>
+  <string name="split_reading_list_message">Há um limite de 1000 artigos por listas de leitura. As listas existentes com um valor acima deste limite foram divididas em várias listas.</string>
+  <string name="reading_list_article_limit_message">Não foi possível ser acrescentado a esta lista. Atingiu o limite máximo de 1,000 artigos por lista para \"%s\".</string>
+  <string name="reading_lists_limit_message">Não foi possível criar outra lista. Atingiu o limite máximo de 100 listas de leitura por conta.</string>
   <plurals name="reading_list_article_offline_message">
     <item quantity="one">Este artigo agora estará disponível off-line.</item>
     <item quantity="other">Estes artigos agora estarão disponíveis off-line.</item>
@@ -365,12 +377,22 @@
   <string name="notification_reverted">A sua edição do artigo &lt;strong&gt;%2$s&lt;/strong&gt; foi desfeita por &lt;em&gt;%1$s&lt;/em&gt;.</string>
   <string name="notification_thanks_title">Você recebeu um agradecimento!</string>
   <string name="notification_thanks">&lt;em&gt;%1$s&lt;/em&gt; agradeceu-lhe a edição na página &lt;strong&gt;%2$s&lt;/strong&gt;</string>
+  <string name="notification_channel_name">Sincronização</string>
+  <string name="notification_channel_description">Progresso do download</string>
+  <string name="notification_syncing_title">Baixando %1$d artigo(s)...</string>
+  <string name="notification_syncing_description">Falta(m) %1$d artigo(s)</string>
+  <string name="notification_syncing_pause_button">Pausar</string>
+  <string name="notification_syncing_resume_button">Retomar</string>
+  <string name="notification_syncing_cancel_button">Cancelar</string>
   <string name="view_continue_reading_card_title">Continue lendo</string>
   <string name="view_because_you_read_card_title">Porque você leu</string>
   <string name="view_random_card_title">Aleatório</string>
-  <string name="view_random_card_subtitle">Ler um artigo aleatório da Wikipédia</string>
+  <string name="view_random_card_subtitle">Folhear artigos aleatórios para ler a partir da Wikipédia</string>
+  <string name="view_random_card_action">Rolar os dados</string>
+  <string name="view_next_random_article">Carregar outro artigo aleatório</string>
   <string name="view_main_page_card_title">Hoje na Wikipédia</string>
   <string name="view_main_page_card_subtitle">Página principal em %s</string>
+  <string name="view_main_page_card_action">Ver página principal</string>
   <string name="view_featured_image_card_title">Imagem do dia</string>
   <string name="view_featured_image_card_download">Baixar</string>
   <string name="menu_feed_card_dismiss">Ocultar este cartão</string>
@@ -378,20 +400,35 @@
   <string name="menu_feed_overflow_label">Mais opções</string>
   <string name="feed_featured_image_share_subject">Imagem em destaque em Wikimedia Commons</string>
   <string name="feed">Explorar</string>
-  <string name="view_card_footer_button">Ver mais</string>
   <string name="most_read_list_card_title">Tendências</string>
   <string name="view_static_card_icon_content_description">Ícone do cartão</string>
   <string name="view_card_news_title">Eventos recentes</string>
   <plurals name="view_continue_reading_card_subtitle">
-    <item quantity="one">Ontem</item>
+    <item quantity="one">ontem</item>
     <item quantity="other">%d dias atrás</item>
   </plurals>
-  <string name="view_continue_reading_card_subtitle_today">Hoje</string>
+  <string name="view_continue_reading_card_subtitle_today">hoje</string>
+  <string name="view_continue_reading_card_subtitle_read_date">Ler %s</string>
   <string name="view_announcement_card_negative_action">Não, obrigado</string>
   <string name="view_offline_card_text">O conteúdo não pode ser carregado quando offline.</string>
   <string name="view_featured_article_card_title">Artigo destacado</string>
   <string name="view_featured_article_footer_save_button_label">Salvar</string>
   <string name="view_featured_article_footer_saved_button_label">Salvo</string>
+  <string name="feed_configure_activity_title">Personalize o feed</string>
+  <string name="feed_configure_menu_reset">Restaurar visualização padrão</string>
+  <string name="feed_configure_menu_select_all">Selecionar tudo</string>
+  <string name="feed_configure_menu_deselect_all">Desmarcar todos</string>
+  <string name="feed_item_type_news">Artigos sobre eventos atuais</string>
+  <string name="feed_item_type_on_this_day">Eventos na história neste dia</string>
+  <string name="feed_item_type_continue_reading">Link rápido para ler um artigo aberto em uma das suas abas</string>
+  <string name="feed_item_type_because_you_read">Sugestões baseadas em um artigo recentemente lido do seu histórico</string>
+  <string name="feed_item_type_featured_article">Artigo divulgado diariamente na Wikipedia</string>
+  <string name="feed_item_type_trending">Artigos mais vistos diariamente</string>
+  <string name="feed_item_type_featured_image">Imagem em destaque na Wikimedia Commons</string>
+  <string name="feed_item_type_main_page">Página principal da Wikipedia com conteúdo destacado diariamente</string>
+  <string name="feed_item_type_randomizer">Gerar artigos aleatórios para ler</string>
+  <string name="feed_configure_onboarding_action">Personalizar</string>
+  <string name="feed_configure_onboarding_text">&lt;strong&gt;Personalize seu feed de Explorar&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Agora você pode escolher o que mostrar em seu feed, e também priorizar seus tipos de conteúdo favoritos.</string>
   <string name="description_edit_text_hint">Descrição do título</string>
   <string name="description_edit_save">Publicar</string>
   <string name="description_edit_add_description">Adicionar descrição do título</string>
@@ -434,23 +471,24 @@
   <string name="offline_compilation_download_device_offline">Sem conexão à internet. Certifique-se de estar de volta online e tente novamente.</string>
   <string name="offline_read_permission_rationale">A permissão para acessar o armazenamento em seu dispositivo é necessária para a navegação off-line.</string>
   <string name="offline_read_permission_error">Permissão não concedida para ler do armazenamento do dispositivo.</string>
-  <string name="offline_card_text">Agora você está navegando na Wikipédia offline com artigos na sua Biblioteca Offline.</string>
+  <string name="offline_card_sideloading_text">Agora você está navegando na Wikipédia fora dos pacotes de artigos na sua Biblioteca Offline.</string>
   <string name="offline_my_compilations">Gerencie minha biblioteca off-line</string>
   <string name="offline_compilations_title">Biblioteca Offline</string>
   <string name="offline_compilations_search_by_name">Pesquisar pacotes de artigos pelo nome</string>
-  <string name="offline_compilations_found_count">Na minha biblioteca (%d)</string>
+  <string name="offline_compilations_found_count">Na minha Biblioteca Offline (%d)</string>
   <string name="offline_compilations_add">Adicionar à minha Biblioteca Offline</string>
   <string name="remote_compilations_title">Biblioteca Offline</string>
   <string name="remote_compilations_description">Com a Biblioteca Offline, agora você pode baixar pacotes de artigos para ler quando você não possui conexão à internet disponível.</string>
-  <string name="offline_compilation_detail_date_size">%1$s • %2$.2f GB</string>
-  <string name="offline_compilation_detail_button_download">Download • %.2f GB</string>
+  <string name="offline_compilation_detail_date_size_v2">%1$s • %2$s</string>
+  <string name="size_gb">%.2f GB</string>
+  <string name="size_mb">%.2f MB</string>
+  <string name="offline_compilation_detail_button_download_v2">Baixar %s</string>
   <string name="offline_compilation_detail_button_remove">Remover</string>
   <string name="remote_compilation_download">Baixar</string>
-  <string name="storage_size">%.2f GB</string>
-  <string name="storage_size_free">%.2f GB grátis</string>
+  <string name="storage_size_free_v2">%s disponível</string>
   <string name="storage_used_by_compilations">usado pela biblioteca off-line</string>
   <string name="storage_other_apps">Outros aplicativos</string>
-  <string name="offline_compilation_download_progress_text">%1$.2f GB / %2$.2f GB</string>
+  <string name="offline_compilation_download_progress_text_v2">%1$s / %2$s</string>
   <plurals name="offline_compilation_download_time_remaining">
     <item quantity="one">falta 1 minuto</item>
     <item quantity="other">faltam %d minutos</item>
@@ -464,11 +502,11 @@
   <string name="compilation_remove_confirm">Deseja remover isso da sua Biblioteca Offline?</string>
   <string name="offline_library_title">Biblioteca Offline</string>
   <string name="offline_library_empty_title">Nada na sua Biblioteca Offline</string>
-  <string name="offline_library_empty_description">Escolha um pacote de artigos da Wikipedia para baixar agora, para acesso livre de dados mais tarde.</string>
+  <string name="offline_library_empty_description_sideload">“Pacotes de artigos” na sua biblioteca off-line são conjuntos de artigos pré-empacotados para armazenamento conveniente em seu dispositivo, para que você continue a ler quando estiver desconectado.&lt;br /&gt;&lt;a href=\"https://www.mediawiki.org/wiki/Wikimedia_Apps/Offline_support\"&gt;Descubra mais&lt;/a&gt;</string>
+  <string name="offline_library_packs_hint">Pacotes de artigos em sua biblioteca permanecem disponíveis para leitura quando você está desconectado. &lt;a href=\"https://www.mediawiki.org/wiki/Wikimedia_Apps/Offline_support\"&gt;Descubra mais&lt;/a&gt;</string>
+  <string name="offline_library_data_usage_hint">Deseja economizar no uso de dados? Escolha para “Prefira o conteúdo off-line” em Configurações para exibir os artigos off-line disponíveis, mesmo quando você possui conectividade. &lt;a href=\"#settings\"&gt;Vá para as configurações&lt;/a&gt;</string>
   <string name="offline_library_empty_search">Pesquisar na Biblioteca Offline</string>
   <string name="offline_library_search_results_state">Resultados da pesquisa da sua Biblioteca Offline</string>
-  <string name="offline_library_onboarding_action">Descubra mais</string>
-  <string name="offline_library_onboarding_text">Apresentando a Biblioteca Offline - baixe pacotes de artigos agora para leitura offline depois.</string>
   <string name="offline_library_onboarding_button_done">Feito</string>
   <string name="offline_library_onboarding_build_library_title">Crie sua biblioteca off-line</string>
   <string name="offline_library_onboarding_build_library_subtitle">Baixe pacotes de artigos da Wikipedia agora para acesso livre de dados mais tarde.</string>
@@ -476,20 +514,35 @@
   <string name="offline_library_onboarding_uninterrupted_reading_subtitle">Continue lendo e procurando artigos dentro da sua Biblioteca Offline quando você não tiver acesso à Internet.</string>
   <string name="offline_library_onboarding_store_knowledge_title">Armazenar mais conhecimento</string>
   <string name="offline_library_onboarding_store_knowledge_subtitle">Baixe a Wikipedia tanto quanto seu dispositivo possa lidar. A Biblioteca off-line também pode acessar pacotes de artigos no armazenamento externo.</string>
+  <string name="offline_library_main_page_hint_html">Esta Página Principal fornece uma visão geral do conteúdo deste pacote de artigos.&lt;br /&gt;&lt;br /&gt;Você também pode explorar o conteúdo de qualquer pacote de artigos na sua Biblioteca Offline procurando por artigos disponíveis enquanto estiver desconectado.</string>
   <string name="onboarding_skip">Pular</string>
   <string name="onboarding_continue">Continuar</string>
   <string name="onboarding_get_started">Começar</string>
+  <string name="onboarding_welcome_title">A Enciclopédia Livre</string>
+  <string name="onboarding_welcome_text">A Wikipédia é escrita de forma colaborativa por voluntários e contém mais de 40 milhões de artigos em quase 300 línguas diferentes. &lt;a href=\"#about\"&gt;Saiba mais&lt;/a&gt;</string>
   <string name="onboarding_explore_title">Novas maneiras de explorar</string>
-  <string name="onboarding_explore_text">Descubra artigos em destaque, tópicos de tendências e sugestões de leitura no feed do Explore.</string>
-  <string name="onboarding_reading_list_sync_title">Listas de leitura sincronizadas</string>
-  <string name="onboarding_reading_list_sync_text">Crie listas de leitura de artigos que você deseja ler mais tarde, mesmo quando você está desconectado. &lt;a href=\"#login\"&gt;Faça login ou crie&lt;/a&gt; sua conta de Wikipedia para manter suas listas de leitura protegidas.</string>
+  <string name="onboarding_explore_text">Mergulhe o buraco de coelho da Wikipédia com uma atualização constante Explore feed. &lt;br/&gt; &lt;b&gt;Customizar&lt;/b&gt; A alimentação de seus interesses - seja aprendendo sobre eventos históricos &lt;b&gt;Neste dia&lt;/b&gt;, ou rolando os dados com &lt;b&gt;Aleatória&lt;/b&gt;.</string>
+  <string name="onboarding_save_to_reading_lists_title">Salvar nas listas de leitura</string>
+  <string name="onboarding_save_to_reading_lists_text">Crie listas de leitura a partir dos artigos que pretende ler mais tarde, mesmo quando estiver sem acesso à internet.</string>
   <string name="onboarding_analytics_title">Enviar dados anônimos</string>
-  <string name="onboarding_analytics_text">Ajude a melhorar o aplicativo, informando-nos como você o usa. Os dados coletados são anônimos. &lt;a href=\"#privacy\"&gt;Saiba mais&lt;/a&gt;</string>
+  <string name="onboarding_analytics_offline_text">Ajude a melhorar o aplicativo, informando-nos como você o usa. Os dados coletados são anônimos. &lt;a href=\"#privacy\"&gt;Learn more&lt;/a&gt;</string>
   <string name="onboarding_analytics_switch_title">Enviar dados de uso</string>
   <string name="onboarding_create_account_sync">Sincronize suas listas de leitura</string>
   <string name="onboarding_create_account_contributions">Acompanhe suas contribuições</string>
   <string name="onboarding_create_account_preferences">Salve suas preferências</string>
+  <string name="onboarding_got_it">Entendi</string>
   <string name="app_shortcuts_random">Aleatório</string>
   <string name="app_shortcuts_continue_reading">Continue lendo</string>
   <string name="app_shortcuts_search">Pesquisar</string>
+  <string name="more_trending_text">Mais como isso</string>
+  <string name="top_on_this_day">Tendências em %1$s</string>
+  <string name="on_this_day_card_title">Neste dia</string>
+  <string name="more_events_text">Mais neste dia</string>
+  <string name="events_count_text">%1$s eventos de %2$s–%3$d</string>
+  <string name="this_year">Este ano</string>
+  <string name="back_to_top">Voltar ao topo</string>
+  <plurals name="diff_years">
+    <item quantity="one">Ano passado</item>
+    <item quantity="other">%d anos atrás</item>
+  </plurals>
 </resources>

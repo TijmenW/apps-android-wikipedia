@@ -11,7 +11,6 @@
   <string name="page_error_back_to_main">پر شا تلل</string>
   <string name="menu_clear_all_history">پېښليک پاکول</string>
   <string name="dialog_title_clear_history">سپړل شوی پېښليک سپينول</string>
-  <string name="nav_item_saved_pages">خوندي مخونه</string>
   <string name="share_via">د شريکولو لار</string>
   <string name="menu_page_other_languages">ژبه بدلول</string>
   <string name="menu_page_find_in_page">په مخ کې موندل</string>
@@ -99,7 +98,7 @@
   <string name="about_app_license_heading">منښتليک</string>
   <string name="about_activity_title">په اړه</string>
   <string name="user_blocked_from_editing_title">بنديز لگېدلی</string>
-  <string name="edit_how_page_improved">په ليکنه کې مو څنګه بدلون رامنځته کړ؟</string>
+  <string name="edit_how_page_improved">ليکنه مو څنگه ښه کړه؟</string>
   <string name="edit_next">راتلونکی</string>
   <string name="edit_done" fuzzy="true">خوندي کول</string>
   <string name="edit_preview">مخليدنه</string>
@@ -149,6 +148,7 @@
   <string name="crash_report_activity_title">د کاريال تېروتنه</string>
   <string name="crash_report_relaunch">سر له نوي پيلول</string>
   <string name="crash_report_quit">بندول</string>
+  <string name="article_header_edit_hint">سمول…</string>
   <string name="color_theme_select">شازمکه</string>
   <string name="color_theme_light">رڼا</string>
   <string name="color_theme_dark">تياره</string>
@@ -157,11 +157,10 @@
   <string name="reading_list_save_to">لوستلړ کې خوندي کول</string>
   <string name="reading_list_create_new">نوی جوړول</string>
   <string name="reading_list_added_to_named">%s کې ورگډ شو.</string>
-  <string name="reading_list_added_to_unnamed">لوست لړليک کې ورگډ شوی.</string>
   <string name="reading_list_added_view_button">لړليک کتل</string>
   <string name="reading_list_sort">اوډل</string>
   <string name="reading_list_sort_by_name">اوډنه د نوم له مخې</string>
-  <string name="reading_list_sort_by_recent">اوډنه تر ټولو تازه له مخې</string>
+  <string name="reading_list_sort_by_recent" fuzzy="true">اوډنه تر ټولو تازه له مخې</string>
   <string name="reading_list_menu_delete">لړليک ړنگول</string>
   <string name="reading_list_menu_rename">بيانومول</string>
   <string name="reading_list_name_sample">زما لوست لړليک</string>
@@ -178,7 +177,7 @@
   <string name="user_option_sync_label">غوره توبونه</string>
   <string name="view_continue_reading_card_title">پرله پورې لوستل</string>
   <string name="view_because_you_read_card_title">ځکه چې تاسې لولی</string>
-  <string name="view_random_card_subtitle">د ويکيپېډيا يوه ناټاکلې ليکنه لوستل</string>
+  <string name="view_random_card_subtitle" fuzzy="true">د ويکيپېډيا يوه ناټاکلې ليکنه لوستل</string>
   <string name="view_main_page_card_title">نن په ويکيپېډيا کې</string>
   <string name="view_main_page_card_subtitle">لومړی مخ په %s</string>
   <string name="view_featured_image_card_title">د نن ورځې انځور</string>
@@ -186,9 +185,9 @@
   <string name="menu_feed_card_dismiss">همدا کارت پټول</string>
   <string name="menu_feed_card_dismissed">پټ شوی کارت.</string>
   <string name="feed" fuzzy="true">ويکيپېډيا سپړل</string>
-  <string name="view_card_footer_button">نور کتل</string>
   <string name="view_static_card_icon_content_description">ايکان کارت</string>
   <string name="view_card_news_title">په خبرونو کې</string>
   <string name="view_featured_article_card_title">مخکښه ليکنه</string>
   <string name="view_featured_article_footer_save_button_label">خوندي کول</string>
+  <string name="description_edit_help_more_info">نور معلومات</string>
 </resources>

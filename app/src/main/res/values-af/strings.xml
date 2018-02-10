@@ -18,7 +18,6 @@
   <string name="history_item_delete_undo">Ontdaan</string>
   <string name="dialog_title_clear_history">Wis blaaigeskiedenis</string>
   <string name="dialog_message_clear_history">Die sal al u blaaigeskiedenis wis en enige oop oortjies sluit. Is u seker?</string>
-  <string name="nav_item_saved_pages">Gestoorde bladsye</string>
   <string name="share_via">Deel deur</string>
   <string name="search_redirect_from">Aangestuur vanaf %s</string>
   <string name="menu_page_show_tabs">Vertoon oortjies</string>
@@ -66,7 +65,6 @@
   <string name="edit_section_captcha_hint">Herhaal woorde van hierbo</string>
   <string name="title_captcha">Voer CAPTCHA in</string>
   <string name="edit_section_captcha_reload">Kliek CAPTCHA om te herlaai</string>
-  <string name="edit_saved_page_refresh">Hierdie gestoorde bladsy mag uit datum wees, en moet herlaai word om wysiging moontlik te maak. Wil u hierdie blad herlaai?</string>
   <string name="nav_item_login">Meld aan by Wikipedia</string>
   <string name="login_username_hint">Gebruikersnaam</string>
   <string name="login_password_hint">Wagwoord</string>
@@ -243,13 +241,12 @@
   <string name="reading_list_title_exists">Leeslys “%s” bestaan reeds.</string>
   <string name="reading_list_entry_empty">Voer asb. ’n titel in.</string>
   <string name="reading_list_added_to_named">Tot %s toegevoeg.</string>
-  <string name="reading_list_added_to_unnamed">Tot leeslys toegevoeg.</string>
   <string name="reading_list_already_exists">Hierdie artikel is reeds in daardie lys.</string>
   <string name="reading_list_added_view_button">Bekyk lys</string>
   <string name="reading_list_sort">Sorteer</string>
   <string name="reading_list_sort_by_name">Sorteer volgens naam</string>
   <string name="reading_list_sort_by_name_desc">Sorteer volgens naam (omgekeer)</string>
-  <string name="reading_list_sort_by_recent">Sorteer volgens onlangsste</string>
+  <string name="reading_list_sort_by_recent" fuzzy="true">Sorteer volgens onlangsste</string>
   <string name="reading_list_menu_delete">Skraplys</string>
   <string name="reading_list_menu_rename">Hernoem</string>
   <string name="reading_list_menu_edit_description">Wysig beskrywing</string>
@@ -260,9 +257,9 @@
   <string name="reading_list_items_deleted">%d artikels uit lys verwyder</string>
   <string name="reading_list_item_delete_undo">Ontdaan</string>
   <string name="reading_list_deleted">%s geskrap</string>
-  <string name="reading_lists_empty">Nog geen leeslyste nie</string>
-  <string name="reading_lists_empty_message">Bewaar artikels in die leeslys sodat u dit later kan lees, selfs wanneer u vanlyn is.</string>
-  <string name="reading_lists_onboarding_intro">Skep ’n leeslys van artikels wat u later wil lees, selfs wanneer u vanlyn is!</string>
+  <string name="saved_list_empty_title">Nog geen leeslyste nie</string>
+  <string name="reading_lists_empty_message" fuzzy="true">Bewaar artikels in die leeslys sodat u dit later kan lees, selfs wanneer u vanlyn is.</string>
+  <string name="reading_lists_onboarding_intro" fuzzy="true">Skep ’n leeslys van artikels wat u later wil lees, selfs wanneer u vanlyn is!</string>
   <string name="reading_lists_onboarding_for_example">Byvoorbeeld</string>
   <string name="reading_lists_onboarding_example1">Plekke om te besoek</string>
   <string name="reading_lists_onboarding_example2">Gunstelingdiere</string>
@@ -287,11 +284,11 @@
   <string name="view_featured_image_card_download">Laai af</string>
   <string name="feed">Verken</string>
   <string name="view_card_news_title">In die nuus</string>
-  <plurals name="view_continue_reading_card_subtitle">
+  <plurals name="view_continue_reading_card_subtitle" fuzzy="true">
     <item quantity="one">Gister</item>
     <item quantity="other">%d dae gekede</item>
   </plurals>
-  <string name="view_continue_reading_card_subtitle_today">Vandag</string>
+  <string name="view_continue_reading_card_subtitle_today" fuzzy="true">Vandag</string>
   <string name="view_announcement_card_negative_action">Nee dankie</string>
   <string name="description_edit_cancel_hint">Kanselleer</string>
   <string name="description_edit_success_did_you_know">Het u geweet?</string>

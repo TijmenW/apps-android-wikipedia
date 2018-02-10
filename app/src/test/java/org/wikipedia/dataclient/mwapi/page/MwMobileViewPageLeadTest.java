@@ -5,10 +5,10 @@ import android.support.annotation.NonNull;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.robolectric.RobolectricTestRunner;
 import org.wikipedia.dataclient.page.BasePageLeadTest;
 import org.wikipedia.dataclient.page.PageClient;
 import org.wikipedia.dataclient.page.PageLead;
-import org.wikipedia.test.TestRunner;
 import org.wikipedia.testlib.TestLatch;
 
 import okhttp3.CacheControl;
@@ -21,7 +21,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.fail;
 import static org.wikipedia.json.GsonUnmarshaller.unmarshal;
 
-@RunWith(TestRunner.class) public class MwMobileViewPageLeadTest extends BasePageLeadTest {
+@RunWith(RobolectricTestRunner.class) public class MwMobileViewPageLeadTest extends BasePageLeadTest {
     private PageClient subject;
 
     @Before public void setUp() throws Throwable {
@@ -57,7 +57,7 @@ import static org.wikipedia.json.GsonUnmarshaller.unmarshal;
     @Test @SuppressWarnings("checkstyle:magicnumber") public void testThumbUrls() throws Throwable {
         enqueueFromFile("page_lead_mw.json");
         final TestLatch latch = new TestLatch();
-        subject.lead(CacheControl.FORCE_NETWORK, PageClient.CacheOption.CACHE, "foo", 640, false)
+        subject.lead(CacheControl.FORCE_NETWORK, PageClient.CacheOption.CACHE, "foo", 640)
                 .enqueue(new Callback<PageLead>() {
                     @Override
                     public void onResponse(@NonNull Call<PageLead> call, @NonNull Response<PageLead> response) {

@@ -18,7 +18,6 @@
   <string name="dialog_message_clear_history">Aquò suprimirà tot l’istoric de navigacion, e tamparà totes los onglets dobèrts actualament. Sètz segur ?</string>
   <string name="dialog_message_clear_history_yes">Òc</string>
   <string name="dialog_message_clear_history_no">Non</string>
-  <string name="nav_item_saved_pages">Paginas enregistradas</string>
   <string name="share_via">Partejar via</string>
   <string name="search_redirect_from">Redirigit dempuèi %s</string>
   <string name="menu_page_show_tabs">Afichar los onglets</string>
@@ -62,8 +61,6 @@
   <string name="edit_section_captcha_hint">Repetir los mots çaisús</string>
   <string name="title_captcha">Entrar lo captcha</string>
   <string name="edit_section_captcha_reload">Picar lo captcha per recargar</string>
-  <string name="edit_saved_page_refresh_yes">Òc</string>
-  <string name="edit_saved_page_refresh_no">Non</string>
   <string name="nav_item_login">Connexion a Wikipèdia</string>
   <string name="login_username_hint">Nom d\'utilizaire</string>
   <string name="login_password_hint">Senhal</string>
@@ -223,14 +220,13 @@
   <string name="reading_list_title_exists">La lista de lectura «%s» existís ja.</string>
   <string name="reading_list_entry_empty">Entratz un títol.</string>
   <string name="reading_list_added_to_named">Apondut a %s.</string>
-  <string name="reading_list_added_to_unnamed">Apondut a la lista de lectura.</string>
   <string name="reading_list_already_exists">Aqueste article fa ja partida d\'aquesta lista.</string>
   <string name="reading_list_added_view_button">Afichar la lista</string>
   <string name="reading_list_sort">Triar</string>
   <string name="reading_list_sort_by_name">Triar per nom</string>
   <string name="reading_list_sort_by_name_desc">Triar per nom (invèrse)</string>
-  <string name="reading_list_sort_by_recent">Triar segon los mai recents</string>
-  <string name="reading_list_sort_by_recent_desc">Triar segon los mens recents</string>
+  <string name="reading_list_sort_by_recent" fuzzy="true">Triar segon los mai recents</string>
+  <string name="reading_list_sort_by_recent_desc" fuzzy="true">Triar segon los mens recents</string>
   <string name="reading_list_menu_delete">Suprimir la lista</string>
   <string name="reading_list_name_sample">Ma lista de lectura</string>
   <string name="reading_list_name_hint">Nom d\'aquesta lista</string>
@@ -238,12 +234,13 @@
   <string name="reading_list_item_deleted">%s suprimit de la lista</string>
   <string name="reading_list_item_delete_undo">Anullar</string>
   <string name="reading_list_deleted">%s suprimit</string>
-  <string name="reading_lists_empty">Encara i a pas cap de lista de lectura.</string>
+  <string name="saved_list_empty_title">Encara i a pas cap de lista de lectura.</string>
   <string name="reading_lists_onboarding_for_example">Per exemple</string>
   <string name="reading_lists_onboarding_example1">Endreits a visitar</string>
   <string name="reading_lists_onboarding_example2">Animals favorits</string>
   <string name="reading_lists_onboarding_example3">Exploracion espaciala</string>
   <string name="reading_lists_onboarding_got_it">L’obténer</string>
+  <string name="reading_list_delete_confirm" fuzzy="true">Sètz segur que volètz suprimir aquesta lista %s de lectura ?</string>
   <string name="user_option_sync_label">Preferéncias</string>
   <string name="notification_button_view_user">Parlar a l\'utilizaire</string>
   <string name="notification_talk_title">Messatge novèl sus Wikipèdia</string>
@@ -254,7 +251,7 @@
   <string name="view_continue_reading_card_title">Contunhar de legir</string>
   <string name="view_because_you_read_card_title">Perque avètz legit</string>
   <string name="view_random_card_title">A l\'azard</string>
-  <string name="view_random_card_subtitle">Legissètz un article de la Wikipèdia a l\'azard</string>
+  <string name="view_random_card_subtitle" fuzzy="true">Legissètz un article de la Wikipèdia a l\'azard</string>
   <string name="view_main_page_card_title">Uèi sus Wikipèdia</string>
   <string name="view_main_page_card_subtitle">Pagina principala lo %s</string>
   <string name="view_featured_image_card_title">Imatge del jorn</string>
@@ -264,15 +261,14 @@
   <string name="menu_feed_overflow_label">Mai d\'opcions</string>
   <string name="feed_featured_image_share_subject">Imatge destacat de Wikimedia Commons</string>
   <string name="feed">Explorar</string>
-  <string name="view_card_footer_button">Veire mai</string>
   <string name="most_read_list_card_title">Tendéncia</string>
   <string name="view_static_card_icon_content_description">Icòna de la carta</string>
   <string name="view_card_news_title">Dins l’actualitat</string>
-  <plurals name="view_continue_reading_card_subtitle">
+  <plurals name="view_continue_reading_card_subtitle" fuzzy="true">
     <item quantity="one">Ièr</item>
     <item quantity="other">I a %d jorns</item>
   </plurals>
-  <string name="view_continue_reading_card_subtitle_today">Uèi</string>
+  <string name="view_continue_reading_card_subtitle_today" fuzzy="true">Uèi</string>
   <string name="view_announcement_card_negative_action">Non mercé</string>
   <string name="description_edit_text_hint">Descripcion del títol</string>
   <string name="description_edit_save">Publicar</string>
